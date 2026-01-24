@@ -1,3 +1,5 @@
+package Arrays;
+
 class Task1 {
     //Test
     public static void main(String[] args) {

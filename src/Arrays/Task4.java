@@ -1,3 +1,5 @@
+package Arrays;
+
 class Task4 {
     public static void main(String[] args) {
         int[] array = new int[]{2, 5, 3, 7, 11, 9, 12};

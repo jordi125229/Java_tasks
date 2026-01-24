@@ -1,17 +1,19 @@
+package Arrays;
+
 import java.util.Scanner;
 
-class Task8 {
+class Task11 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        Task8 test = new Task8();
+        Task11 test = new Task11();
 
         System.out.println("Podaj dlugosc tablicy");
         int arrayLength = sc.nextInt();
         int[] array = new int[arrayLength];
 
         test.arrayInsert(array, sc);
+        test.arrayChange(array);
         test.arrayPriner(array);
-        test.findNumber(array);
     }
 
     void arrayInsert(int[] array, Scanner sc) {
@@ -20,27 +22,15 @@ class Task8 {
             array[i] = sc.nextInt();
         }
     }
+    void arrayChange(int[] array){
+        int first = array[0];
+        array[0] = array[array.length - 1];
+        array[array.length - 1] = first;
+    }
     void arrayPriner(int[] array) {
         System.out.println("Wypisz elementy tablicy:");
         for (int i = 0; i < array.length; i++) {
             System.out.println(array[i]);
-        }
-    }
-
-    void findNumber(int[] array){
-        System.out.println("Wczytaj liczbę");
-        Scanner sc = new Scanner(System.in);
-        int x = sc.nextInt();
-        int xQuantity = 0;
-        for (int i = 0; i < array.length; i++) {
-            if (x == array[i]){
-                xQuantity++;
-            }
-        }
-        if (xQuantity > 0){
-            System.out.println("Znaleziono");
-        } else {
-            System.out.println("Nie znaleziono");
         }
     }
 }

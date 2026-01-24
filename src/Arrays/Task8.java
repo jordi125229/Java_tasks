@@ -1,9 +1,11 @@
+package Arrays;
+
 import java.util.Scanner;
 
-class Task7 {
+class Task8 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        Task7 test = new Task7();
+        Task8 test = new Task8();
 
         System.out.println("Podaj dlugosc tablicy");
         int arrayLength = sc.nextInt();
@@ -11,7 +13,7 @@ class Task7 {
 
         test.arrayInsert(array, sc);
         test.arrayPriner(array);
-        test.findTheBiggest(array);
+        test.findNumber(array);
     }
 
     void arrayInsert(int[] array, Scanner sc) {
@@ -27,13 +29,20 @@ class Task7 {
         }
     }
 
-    void findTheBiggest(int[] array) {
-        int min = 0;
+    void findNumber(int[] array){
+        System.out.println("Wczytaj liczbę");
+        Scanner sc = new Scanner(System.in);
+        int x = sc.nextInt();
+        int xQuantity = 0;
         for (int i = 0; i < array.length; i++) {
-            if (array[i] < min){
-                min = array[i];
+            if (x == array[i]){
+                xQuantity++;
             }
         }
-        System.out.println("Najmniejsza liczba z tablicy to: " + min);
+        if (xQuantity > 0){
+            System.out.println("Znaleziono");
+        } else {
+            System.out.println("Nie znaleziono");
+        }
     }
 }

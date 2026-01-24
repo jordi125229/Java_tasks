@@ -1,19 +1,20 @@
+package Arrays;
+
 import java.util.Scanner;
 
-class Task6 {
+class Task7 {
     public static void main(String[] args) {
-    Scanner sc = new Scanner(System.in);
-    Task6 test = new Task6();
+        Scanner sc = new Scanner(System.in);
+        Task7 test = new Task7();
 
-    System.out.println("Podaj dlugosc tablicy");
-    int arrayLength = sc.nextInt();
-    int[] array = new int[arrayLength];
+        System.out.println("Podaj dlugosc tablicy");
+        int arrayLength = sc.nextInt();
+        int[] array = new int[arrayLength];
 
-    test.arrayInsert(array, sc);
-    test.arrayPriner(array);
-    test.findTheBiggest(array);
-
-}
+        test.arrayInsert(array, sc);
+        test.arrayPriner(array);
+        test.findTheBiggest(array);
+    }
 
     void arrayInsert(int[] array, Scanner sc) {
         System.out.println("Wczytaj elementy tablicy");
@@ -29,12 +30,12 @@ class Task6 {
     }
 
     void findTheBiggest(int[] array) {
-        int max = 0;
+        int min = 0;
         for (int i = 0; i < array.length; i++) {
-            if (array[i] > max){
-                max = array[i];  //tu uzylem chata bo zamulilem, i nadpisywalem array[i] = max i zwieche zlapalem z tym bo nie wiedzialem co jest zle
+            if (array[i] < min){
+                min = array[i];
             }
         }
-        System.out.println("Największa liczba z tablicy to: " + max);
+        System.out.println("Najmniejsza liczba z tablicy to: " + min);
     }
 }

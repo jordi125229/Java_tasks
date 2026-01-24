@@ -1,3 +1,5 @@
+package Arrays;
+
 class Task2 {
     public static void main(String[] args) {
         String[] names = new String[]{"Kuba", "Bartek", "Rafał"};

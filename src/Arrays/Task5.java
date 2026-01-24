@@ -1,3 +1,5 @@
+package Arrays;
+
 class Task5 {
     public static void main(String[] args) {
         double[] array = new double[]{1, 5, 3, 7, 11, 9, 12};
