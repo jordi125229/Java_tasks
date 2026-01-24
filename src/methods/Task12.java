@@ -13,7 +13,7 @@ class Task12 {
     }
 
     static boolean czyPierwsza(int n){
-
+// w trakcie
         return false;
     }
 }
