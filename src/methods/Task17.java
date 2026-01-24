@@ -1,0 +1,17 @@
+package methods;
+
+class Task17 {
+    public static void main(String[] args) {
+        System.out.println(nwdIter(18,24));
+
+    }
+
+    static int nwdIter(int a, int b){
+        while (b != 0) {
+            int i1 = a % b;
+            a = b;
+            b = i1;
+        }
+        return a;
+    }
+}
