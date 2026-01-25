@@ -45,8 +45,6 @@ class Task18 {
         }
     }
 }
-/*Macierz – element maksymalny**
-    - Wczytaj tablicę dwuwymiarową.
-    - Znajdź i wypisz największy element macierzy oraz jego pozycję (wiersz, kolumna).
-    - Nastepnie znajdź i wypisz trzeci co do wielkosci największy element macierzy*/
+
+/*Nastepnie znajdź i wypisz trzeci co do wielkosci największy element macierzy - tego nie wiem*/
 

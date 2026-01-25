@@ -6,9 +6,9 @@ class Task17 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int[][] array = new int[2][3];
-        int[] arrayColumns = new int[3];
         System.out.println("Wpisz liczby do tablicy");
         insert(array, sc);
+        sumColumns(array);
 
     }
 
@@ -20,11 +20,15 @@ class Task17 {
             }
         }
     }
+    static void sumColumns(int[][] array){
+        for (int i = 0; i < array[0].length; i++) {
+            int sum = 0;
+                for (int j = 0; j < array.length; j++) {
+                sum += array[j][i]; //uzylem AI, bo mylilem indeksy i outofbound exception wyrzucalo mi
+            }
+            System.out.println(sum);
+        }
+    }
 }
 
-/*Macierz – suma kolumn**
-        - Wczytaj tablicę dwuwymiarową 2x3 z liczbami całkowitymi.
-        - Oblicz sumę każdej kolumny osobno i wypisz wyniki*/
-
-/*w trakcie*/
 
