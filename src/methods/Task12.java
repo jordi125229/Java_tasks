@@ -2,10 +2,10 @@ package methods;
 
 class Task12 {
     public static void main(String[] args) {
-        int n = 9;
+        int n = 3;
         boolean result = czyPierwsza(n);
 
-        if (result == true) {
+        if (result) {
             System.out.println("Liczba jest pierwsza");
         } else {
             System.out.println("Liczba nie jest pierwsza");
@@ -13,12 +13,11 @@ class Task12 {
     }
 
     static boolean czyPierwsza(int n){
-// w trakcie
-        return false;
+        for (int i = 2; i <= Math.sqrt(n); i++) {
+            if (n % i == 0){
+                return false;
+            }
+        }
+        return true;
     }
 }
-
-
-/*Czy liczba jest pierwsza**
-        - Napisz metodę `czyPierwsza(int n)`, która zwraca `true` jeśli liczba jest pierwsza.
-        - W `main` wypisz odpowiedni komunikat w zależności od wyniku.*/

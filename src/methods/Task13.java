@@ -26,8 +26,3 @@ class Task13 {
         }
     }
 }
-
-
-/*Odwrotna kolejność w tablicy**
-        - Napisz metodę `odwrocTablice(int[] tab)`, która zwraca nową tablicę z odwróconą kolejnością elementów.
-        - W `main` wypisz tablicę przed i po odwróceniu.*/

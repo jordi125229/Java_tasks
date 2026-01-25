@@ -59,10 +59,3 @@ class Task19 {
         System.out.println("Podaj liczby do działania");
     }
 }
-
-
-
-/*Menu kalkulatora**
-    - Napisz metodę `menu()` wyświetlającą opcje: `1 – Dodawanie`, `2 – Odejmowanie`, `3 – Mnożenie`, `0 – Wyjście`.
-    - Napisz osobne metody dla każdej operacji (`dodaj`, `odejmij`, `pomnoz`).
-    - W `main` obsłuż wybór użytkownika w pętli i wykonaj wybraną metodę.*/

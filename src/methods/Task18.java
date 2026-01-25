@@ -17,7 +17,3 @@ class Task18 {
         }
     }
 }
-
-
-/*NWD dwóch liczb – rekurencyjnie**
-        - Napisz metodę `nwdRek(int a, int b)`, która zwraca NWD obliczony rekurencyjnie metodą Euklidesa.*/

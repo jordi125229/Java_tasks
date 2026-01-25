@@ -11,7 +11,6 @@ class Task14 {
         }
     }
 
-
     static int[] merge(int[] tab1, int[] tab2){
         int[] tab3 = new int[tab1.length + tab2.length];
         for (int i = 0; i < tab1.length; i++) {
