@@ -12,7 +12,6 @@ class Task17 {
 
     }
 
-
     private static void insert(int[][] notes, Scanner sc) {
         for (int i = 0; i < notes.length; i++) {
             for (int j = 0; j < notes[i].length; j++) {
