@@ -3,7 +3,7 @@ class Car {
     String brand;
     int yearofProduction;
 
-    static int counter = 0;
+    static int counter;
 
     //2
 //    public Car() {
@@ -35,8 +35,8 @@ class Car {
     }
 
     //7
-    public void introduceYourself(Car car){
-        System.out.println("I am a car of brand " + car.brand + " from year " + car.yearofProduction);
+    public void introduceYourself(){
+        System.out.println("I am a car of brand " + brand + " from year " + yearofProduction);
     }
 
     //8

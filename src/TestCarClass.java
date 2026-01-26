@@ -30,10 +30,10 @@ class TestCarClass {
         System.out.println(car6);
 
         //Task7
-        car1.introduceYourself(car1);
-        car3.introduceYourself(car3);
-        car3i.introduceYourself(car3i);
-        car3x.introduceYourself(car3x);
+        car1.introduceYourself();
+        car3.introduceYourself();
+        car3i.introduceYourself();
+        car3x.introduceYourself();
 
         //Task8
         Car.classDescription();
