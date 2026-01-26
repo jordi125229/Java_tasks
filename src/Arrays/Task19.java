@@ -17,6 +17,7 @@ class Task19 {
             }
         }
     }
+
     private static void printer(int[][] array) {
         for (int[] ints : array) {
             for (int anInt : ints) {
@@ -26,15 +27,10 @@ class Task19 {
         }
     }
 
-    static void crossPrinter(int[][] array){
-        for (int i = 0; i < array.length; i++) {
-            for (int j = 0; j < array[i].length; j++) {
-                System.out.println(array[i][j]);
-                i++;
-            }
+    static void crossPrinter(int[][] array) {
+        System.out.println("Przekatna: ");
+        for (int i = 0; i < 10; i++) {
+            System.out.print(array[i][i] + "; ");
         }
     }
 }
-/*tu drukuje jak trzeba ale na koncu wyrzuca array index ouf of bond excepiton bo dodaje do i i odwoluje sie do czegos powyzej array.length
-Nie wiem jak sie zabezpieczyc przed tym
- */

@@ -9,6 +9,7 @@ class Task18 {
 
         insert(array, sc);
         findTheBiggest(array);
+        third(array);
     }
 
     private static int[][] getArraySize(Scanner sc) {
@@ -44,7 +45,28 @@ class Task18 {
             }
         }
     }
+
+    static void third(int[][] array){
+        int i1 = array[0][0];
+        int i2 = array[0][0];
+        int i3 = array[0][0];
+        for (int i = 0; i < array.length; i++) {
+            for (int j = 0; j < array[i].length; j++) {
+                int temporary = array[i][j];
+                if (temporary > i1){
+                    i3 = i2;
+                    i2= i1;
+                    i1 = temporary;
+                } else if (temporary > i2){
+                    i3 = i2;
+                    i2 = temporary;
+                } else if (temporary > i3){
+                    i3 = temporary;
+                }
+            }
+        }
+        System.out.println("Trzeci co do wielkosci najwiekszy element to: " + i3);
+    }
 }
 
-/*Nastepnie znajdź i wypisz trzeci co do wielkosci największy element macierzy - tego nie wiem*/
 
