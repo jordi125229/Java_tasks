@@ -1,0 +1,58 @@
+class Car {
+    //1
+    String brand;
+    int yearofProduction;
+
+    static int counter = 0;
+
+    //2
+//    public Car() {
+//        this.brand = "Unknown";
+//        this.yearofProduction = 2000;
+//    }
+    //3 and 9
+    public Car(String brand, int yearofProduction) {
+        this.brand = brand;
+        this.yearofProduction = yearofProduction;
+        counter++;
+    }
+
+    //4
+    public void showDifference(){
+        String brand = "Opel";
+        System.out.println(brand);
+        System.out.println(this.brand);
+    }
+
+    //5
+    public void changeBrand(String brand){
+        this.brand = brand;
+    }
+
+    //6
+    public Car() {
+        this("Unknown", 2000);
+    }
+
+    //7
+    public void introduceYourself(Car car){
+        System.out.println("I am a car of brand " + car.brand + " from year " + car.yearofProduction);
+    }
+
+    //8
+    public static void classDescription(){
+        System.out.println("This class represents cars");
+    }
+
+    //10
+    public static void printCarsArray(Car[] cars){
+        for (Car car : cars) {
+            System.out.println(car);
+        }
+    }
+
+    @Override
+    public String toString() {
+        return  brand + "; " + yearofProduction;
+    }
+}
