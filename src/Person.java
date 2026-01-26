@@ -20,24 +20,29 @@ class Person {
 //    }
 
     //11
-    public void introduceYourself(){
+    public void introduceYourself() {
         System.out.println(name + " " + age);
     }
 
     //12
-    public void introduceYourself(String greeting){
+    public void introduceYourself(String greeting) {
         System.out.println(greeting + " " + name + " " + age);
     }
 
     //16
-    public static void checkIfAdult(Person[] person){
+    public static void checkIfAdult(Person[] person) {
         for (Person person1 : person) {
-            if (person1.age >= 18){
+            if (person1.age >= 18) {
                 System.out.println(person1.name + ": Osoba jest dorosła");
             } else {
                 System.out.println(person1.name + ": Osoba nie jest dorosła");
             }
         }
+    }
+
+    //17
+    public int compareAge(Person other){
+        return this.age - other.age;
     }
 
 }

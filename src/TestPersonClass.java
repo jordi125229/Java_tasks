@@ -47,5 +47,10 @@ class TestPersonClass {
 
         Person.checkIfAdult(peopleArray);
 
+        //17
+        int compareAge = person7.compareAge(person8);
+        System.out.println("Różnica wieku wynosi " + Math.abs(compareAge));
+
+
     }
 }
