@@ -1,16 +1,39 @@
 class Person {
-    String name;
-    int age;
+    private String name;
+    private int age;
 
     static int numberOfPeople;
 
-    public Person(String name, int age) {
-        this.name = name;
-        this.age = age;
-        numberOfPeople++;
+//    public Person(String name, int age) {
+//        this.name = name;
+//        this.age = age;
+//        numberOfPeople++;
+//    }
+
+    public String getName() {
+        return name;
     }
 
-//    public Person(String name){
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public static int getNumberOfPeople() {
+        return numberOfPeople;
+    }
+
+    public static void setNumberOfPeople(int numberOfPeople) {
+        Person.numberOfPeople = numberOfPeople;
+    }
+    //    public Person(String name){
 //        this.name = name;
 //    }
 

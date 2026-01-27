@@ -1,6 +1,6 @@
 class Shop {
-    String name;
-    Product[] products = new Product[20];
+    private String name;
+    private Product[] products = new Product[20];
 
     public Shop(String name, Product[] products) {
         this.name = name;
@@ -9,7 +9,7 @@ class Shop {
 
     public void showProducts(){
         for (Product product : products) {
-            System.out.println(product.name + " " + product.price);
+            System.out.println(product.getName() + " " + product.getPrice());
         }
     }
 }

@@ -2,8 +2,8 @@ class TestCarClass {
     public static void main(String[] args) {
         //Task 1
         Car car1 = new Car();
-        car1.brand = "BMW";
-        car1.yearofProduction = 2024;
+        car1.setBrand("BMW");
+        car1.setYearofProduction(2020);
         System.out.println(car1);
 
         //Task2
