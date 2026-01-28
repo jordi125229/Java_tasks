@@ -6,11 +6,9 @@ class Task13 {
         System.out.println("Wpisz zdanie");
         String sentence = sc.nextLine();
 
-        String replace = sentence.replace(' ', '_');
+        String replaced = sentence.replace(' ', '_').replace(",","");
 
-        System.out.println(replace);
-
-        //Then remove all commas.
+        System.out.println(replaced);
 
     }
 }

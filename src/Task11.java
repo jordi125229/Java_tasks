@@ -10,7 +10,7 @@ class Task11 {
         System.out.println(text.toUpperCase());
         System.out.println(text.toLowerCase());
 
-        //reversed version
-
+        StringBuilder reversed = new StringBuilder(text).reverse();
+        System.out.println(reversed);
     }
 }
