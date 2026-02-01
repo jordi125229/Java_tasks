@@ -4,12 +4,12 @@ class Task1 {
     public static void main(String[] args) {
         Task1 tester = new Task1();
 
-        tester.powitaj("Kuba");
-        tester.powitaj("Olek");
-        tester.powitaj("Marek");
+        tester.welcome("Kuba");
+        tester.welcome("Olek");
+        tester.welcome("Marek");
     }
 
-    public void powitaj(String word){
-        System.out.println("Witaj " + word);
+    public void welcome(String word){
+        System.out.println("Hello " + word);
     }
 }

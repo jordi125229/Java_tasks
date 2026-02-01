@@ -7,7 +7,7 @@ class Task19 {
         Scanner sc = new Scanner(System.in);
         int option;
         do {
-            System.out.println("Wybierz opcję:");
+            System.out.println("Choose option:");
             menu();
             option = sc.nextInt();
 
@@ -18,33 +18,33 @@ class Task19 {
                     break;
                 case 2:
                     printNumbers();
-                    print(reduct(sc.nextInt(), sc.nextInt()));
+                    print(subtract(sc.nextInt(), sc.nextInt()));
                     break;
                 case 3:
                     printNumbers();
                     print(multiply(sc.nextInt(), sc.nextInt()));
                     break;
                 case 0:
-                    System.out.println("Wyjście");
+                    System.out.println("Exit");
                     break;
                 default:
-                    System.out.println("Błędny wydouble");
+                    System.out.println("Wrong option");
             }
         } while (option != 0);
     }
 
     static void menu() {
-        System.out.println("1 – Dodawanie");
-        System.out.println("2 – Odejmowanie");
-        System.out.println("3 – Mnożenie");
-        System.out.println("0 – Wyjście");
+        System.out.println("1 – Add");
+        System.out.println("2 – Subtract");
+        System.out.println("3 – Multiply");
+        System.out.println("0 – Exit");
     }
 
     static double add(double a, double b) {
         return a + b;
     }
 
-    static double reduct(double a, double b) {
+    static double subtract(double a, double b) {
         return a - b;
     }
 
@@ -55,7 +55,8 @@ class Task19 {
     static void print(double i) {
         System.out.println(i);
     }
-    static void printNumbers(){
-        System.out.println("Podaj liczby do działania");
+
+    static void printNumbers() {
+        System.out.println("Insert numbers to operation");
     }
 }

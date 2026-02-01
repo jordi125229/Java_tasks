@@ -7,7 +7,7 @@ class Task7 {
         System.out.println(x);
     }
 
-    static void zmienX(int x){
+    static void zmienX(int x) {
         x = 7;
         System.out.println(x);
     }

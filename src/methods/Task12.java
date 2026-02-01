@@ -3,7 +3,7 @@ package methods;
 class Task12 {
     public static void main(String[] args) {
         int n = 3;
-        boolean result = czyPierwsza(n);
+        boolean result = ifPrime(n);
 
         if (result) {
             System.out.println("Liczba jest pierwsza");
@@ -12,7 +12,7 @@ class Task12 {
         }
     }
 
-    static boolean czyPierwsza(int n){
+    static boolean ifPrime(int n){
         for (int i = 2; i <= Math.sqrt(n); i++) {
             if (n % i == 0){
                 return false;

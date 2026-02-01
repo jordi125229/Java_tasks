@@ -7,12 +7,12 @@ class Task4 {
         Scanner sc = new Scanner(System.in);
         Task4 test = new Task4();
         int i = sc.nextInt();
-        boolean b = test.czyParzysta(i);
+        boolean b = test.ifEven(i);
         System.out.println(b);
     }
 
-    boolean czyParzysta(int liczba) {
-        if (liczba % 2 == 0){
+    boolean ifEven(int liczba) {
+        if (liczba % 2 == 0) {
             return true;
         }
         return false;
