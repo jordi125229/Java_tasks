@@ -6,11 +6,11 @@ class Task6 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Podaj liczbe:");
-        int n = sc.nextInt();
+        int number = sc.nextInt();
 
-        while (n >= 0){
-            System.out.println(n);
-            n--;
+        while (number >= 0) {
+            System.out.println(number);
+            number--;
         }
     }
 }

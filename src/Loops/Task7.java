@@ -8,7 +8,7 @@ class Task7 {
         String password = "java123";
         String passwordProviding = null;
 
-        while (!password.equals(passwordProviding)){
+        while (!password.equals(passwordProviding)) {
             System.out.println("Podaj haslo");
             passwordProviding = sc.nextLine();
         }

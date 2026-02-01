@@ -2,7 +2,7 @@ package Loops;
 
 import java.util.Scanner;
 
-class TAsk10 {
+class Task10 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Podaj liczbe");
@@ -11,7 +11,7 @@ class TAsk10 {
 
         for (int i = 0; i < n; i++) {
             sum = n++;
-            if (sum % 7 ==0){
+            if (sum % 7 == 0) {
                 System.out.println(sum);
                 break;
             }

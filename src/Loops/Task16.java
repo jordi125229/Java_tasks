@@ -5,7 +5,7 @@ import java.util.Scanner;
 class Task16 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Podaj liczbę");
+        System.out.println("Provide number");
         int num = sc.nextInt();
 
         int max = 0;
@@ -17,6 +17,6 @@ class Task16 {
             }
             num = num / 10;
         }
-        System.out.println("Max cyfra: " + max);
+        System.out.println("Max number: " + max);
     }
 }

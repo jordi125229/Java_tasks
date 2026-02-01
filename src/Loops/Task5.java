@@ -9,12 +9,12 @@ class Task5 {
         String word = sc.nextLine();
 
         for (int i = 0; i < word.length(); i++) {
-            if (word.charAt(i) == 'a'){
+            if (word.charAt(i) == 'a') {
                 System.out.println(i + 1);
                 break;
             }
         }
-        if (!word.contains("a")){
+        if (!word.contains("a")) {
             System.out.println("Brak litery 'a'");
         }
     }

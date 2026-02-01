@@ -9,9 +9,9 @@ class Task18 {
         int max = 0;
 
         do {
-            System.out.println("Podaj liczbę");
+            System.out.println("Provide number");
             n = sc.nextInt();
-            if (n > max){
+            if (n > max) {
                 max = n;
             }
         } while (n != 0);

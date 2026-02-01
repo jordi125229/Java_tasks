@@ -8,9 +8,9 @@ class Task8 {
         int n;
 
         do {
-            System.out.println("Podaj liczbę dodatnią");
+            System.out.println("Provide postivie numver");
             n = sc.nextInt();
         } while (n <= 0);
-        System.out.println("Udało się");
+        System.out.println("It worked");
     }
 }

@@ -5,7 +5,7 @@ import java.util.Scanner;
 class Task15 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Podaj liczbę");
+        System.out.println("Provide number");
         int num = sc.nextInt();
         int factorial = 1;
 

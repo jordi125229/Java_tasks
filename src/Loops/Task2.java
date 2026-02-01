@@ -9,7 +9,7 @@ class Task2 {
         int number = sc.nextInt();
 
         for (int i = 1; i <= number; i++) {
-            if (i % 2 == 0){
+            if (i % 2 == 0) {
                 System.out.println(i);
             }
         }
