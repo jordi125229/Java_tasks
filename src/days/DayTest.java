@@ -18,7 +18,6 @@ class DayTest {
         //Task3
         DayOfWeek day1 = DayOfWeek.MONDAY;
         DayOfWeek day2 = DayOfWeek.MONDAY;
-
         System.out.println(day1 == day2);
 
         //Task4

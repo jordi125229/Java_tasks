@@ -11,7 +11,7 @@ class Person {
         this.dayOff = dayOff;
     }
 
-    public void showDayOff(){
+    public void showDayOff() {
         System.out.println(dayOff);
     }
 }

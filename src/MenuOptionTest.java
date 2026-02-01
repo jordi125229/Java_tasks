@@ -9,7 +9,7 @@ class MenuOptionTest {
         MenuOption option;
         option = MenuOption.valueOf(s);
 
-        switch (option){
+        switch (option) {
             case START -> System.out.println("Start");
             case STOP -> System.out.println("Stop");
             case EXIT -> System.out.println("Ending");

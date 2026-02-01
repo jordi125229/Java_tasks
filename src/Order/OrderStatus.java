@@ -7,8 +7,8 @@ public enum OrderStatus {
     DELIVERED,
     CANCELED;
 
-    boolean isActive(){
-        if (this == NEW || this == PROCESSING || this == SHIPPED){
+    boolean isActive() {
+        if (this == NEW || this == PROCESSING || this == SHIPPED) {
             return true;
         } else {
             return false;

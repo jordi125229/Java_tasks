@@ -7,6 +7,9 @@ class PlanetTest {
         BigDecimal density = Planet.EARTH.getDensity();
         System.out.println(density);
 
-        //W TRAKCIE
+        Planet[] values = Planet.values();
+        for (Planet value : values) {
+            System.out.println(value);
+        }
     }
 }

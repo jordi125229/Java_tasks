@@ -18,8 +18,18 @@ public enum Planet {
     }
 
     BigDecimal getDensity() {
-        return mass.divide((new BigDecimal("4").divide(new BigDecimal("3"))
+        BigDecimal volume = (new BigDecimal("4").divide(new BigDecimal("3"), 10, RoundingMode.HALF_UP))
                 .multiply(PI)
-                .multiply(radius).pow(3)),2, RoundingMode.HALF_UP);
+                .multiply(radius.pow(3));
+
+        return mass.divide(volume, 20, RoundingMode.HALF_UP);
+    }
+
+    @Override
+    public String toString() {
+        return "Planet{" +
+                "mass=" + mass +
+                ", radius=" + radius +
+                '}';
     }
 }

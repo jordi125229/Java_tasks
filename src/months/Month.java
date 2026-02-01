@@ -15,7 +15,7 @@ public enum Month {
     DECEMBER(31, false);
 
     final int days;
-    boolean isHolidaySeason;
+    final boolean isHolidaySeason;
 
     Month(int days, boolean isHolidaySeason) {
         this.days = days;
