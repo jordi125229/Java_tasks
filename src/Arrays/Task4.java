@@ -9,7 +9,7 @@ class Task4 {
         System.out.println(summedArray);
     }
 
-    int sum(int[] array){
+    int sum(int[] array) {
         int sum = 0;
         for (int i = 0; i < array.length; i++) {
             sum += array[i];

@@ -6,9 +6,9 @@ class Task2 {
         namesPrinter(names);
     }
 
-    static void namesPrinter (String[] tab){
+    static void namesPrinter(String[] tab) {
         for (String s : tab) {
-            System.out.println("Cześć, " + s);
+            System.out.println("Hi, " + s);
         }
     }
 }

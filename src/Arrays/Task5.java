@@ -9,11 +9,11 @@ class Task5 {
         System.out.println(multipliedArray);
     }
 
-    double multiplication(double[] array){
+    double multiplication(double[] array) {
         double sum = 0;
         for (int i = 0; i < array.length; i++) {
             sum += array[i];
         }
-        return sum/ array.length;
+        return sum / array.length;
     }
 }

@@ -7,7 +7,7 @@ class Task8 {
         Scanner sc = new Scanner(System.in);
         Task8 test = new Task8();
 
-        System.out.println("Podaj dlugosc tablicy");
+        System.out.println("Provide array's length");
         int arrayLength = sc.nextInt();
         int[] array = new int[arrayLength];
 
@@ -17,20 +17,20 @@ class Task8 {
     }
 
     void arrayInsert(int[] array, Scanner sc) {
-        System.out.println("Wczytaj elementy tablicy");
+        System.out.println("Provide array's elements: ");
         for (int i = 0; i < array.length; i++) {
             array[i] = sc.nextInt();
         }
     }
     void arrayPriner(int[] array) {
-        System.out.println("Wypisz elementy tablicy:");
+        System.out.println("Read array's elements:");
         for (int i = 0; i < array.length; i++) {
             System.out.println(array[i]);
         }
     }
 
     void findNumber(int[] array){
-        System.out.println("Wczytaj liczbę");
+        System.out.println("Provide number");
         Scanner sc = new Scanner(System.in);
         int x = sc.nextInt();
         int xQuantity = 0;
@@ -40,9 +40,9 @@ class Task8 {
             }
         }
         if (xQuantity > 0){
-            System.out.println("Znaleziono");
+            System.out.println("Found");
         } else {
-            System.out.println("Nie znaleziono");
+            System.out.println("Not found");
         }
     }
 }

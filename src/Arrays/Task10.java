@@ -7,7 +7,7 @@ class Task10 {
         Scanner sc = new Scanner(System.in);
         Task10 test = new Task10();
 
-        System.out.println("Podaj dlugosc tablicy");
+        System.out.println("Provide array's length");
         int arrayLength = sc.nextInt();
         int[] array = new int[arrayLength];
 
@@ -16,13 +16,14 @@ class Task10 {
     }
 
     void arrayInsert(int[] array, Scanner sc) {
-        System.out.println("Wczytaj elementy tablicy");
+        System.out.println("Provide array's elements: ");
         for (int i = 0; i < array.length; i++) {
             array[i] = sc.nextInt();
         }
     }
+
     void arrayReversalPriner(int[] array) {
-        System.out.println("Wypisz elementy tablicy odwrócone:");
+        System.out.println("Read reversed array's elements:");
         for (int i = array.length - 1; i >= 0; i--) {
             System.out.println(array[i]);
         }
