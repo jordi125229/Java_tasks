@@ -1,3 +1,5 @@
+package days;
+
 import java.util.Scanner;
 
 class DayTest {
@@ -9,7 +11,7 @@ class DayTest {
         System.out.println("Day: " + friday);
 
         //Task2
-//        for (DayOfWeek value : DayOfWeek.values()) {
+//        for (days.DayOfWeek value : days.DayOfWeek.values()) {
 //            System.out.println(value);
 //        }
 

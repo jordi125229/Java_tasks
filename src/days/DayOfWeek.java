@@ -1,3 +1,5 @@
+package days;
+
 public enum DayOfWeek {
     MONDAY,
     TUESDAY,
