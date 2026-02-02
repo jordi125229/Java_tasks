@@ -1,0 +1,32 @@
+package users;
+
+public class CompanyUser extends User {
+    private String companyName;
+    private String taxId;
+
+    public CompanyUser(String email, String displayName, String taxId) {
+        super(email, displayName);
+        this.taxId = taxId;
+    }
+
+    public String getCompanyName() {
+        return companyName;
+    }
+
+    public void setCompanyName(String companyName) {
+        this.companyName = companyName;
+    }
+
+    public String getTaxId() {
+        return taxId;
+    }
+
+    public void setTaxId(String taxId) {
+        this.taxId = taxId;
+    }
+
+    @Override
+    public String toString() {
+        return super.toString() + "; " + companyName + "; " + taxId;
+    }
+}
