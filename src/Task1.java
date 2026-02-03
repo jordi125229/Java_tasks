@@ -7,19 +7,19 @@ class Task1 {
 
         BigDecimal test2 = new BigDecimal("2.25");
 
-        //dodawanie
+        //adding
         BigDecimal add = test.add(test2);
         System.out.println(add);
 
-        //odejmowanie
+        //subtracting
         BigDecimal subtract = test.subtract(test2);
         System.out.println(subtract);
 
-        //mnozenie
+        //multiplying
         BigDecimal multiply = test.multiply(test2);
         System.out.println(multiply);
 
-        //dzielenie
+        //dividing
         BigDecimal divide = test.divide(test2);
         System.out.println(divide);
     }

@@ -16,6 +16,5 @@ class Task4 {
 
         BigDecimal newPrice = priceBd.subtract(priceBd.multiply(discountBd)).setScale(2, RoundingMode.HALF_UP);
         System.out.println(newPrice);
-
     }
 }

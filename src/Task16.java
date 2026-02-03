@@ -3,7 +3,7 @@ import java.util.Scanner;
 class Task16 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Wpisz tekst");
+        System.out.println("Insert phrase");
         String phrase = sc.nextLine();
 
         boolean startWithJava = phrase.startsWith("Java".toLowerCase());

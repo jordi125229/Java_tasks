@@ -5,14 +5,13 @@ import java.util.Scanner;
 class Task8 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Podaj liczbe produktow");
+        System.out.println("Insert product's amount");
 
         int productsAmount = sc.nextInt();
         BigDecimal[] array = new BigDecimal[productsAmount];
-        System.out.println("Podaj ceny produktów");
+        System.out.println("Insert product's prices");
 
         System.out.println(calculateAverage(priceInsert(array, sc)));
-
     }
 
     static BigDecimal[] priceInsert(BigDecimal[] array, Scanner sc) {
@@ -27,6 +26,6 @@ class Task8 {
         for (int i = 0; i < array.length; i++) {
             sum = sum.add(array[i]);
         }
-        return sum.divide(BigDecimal.valueOf(array.length),2, RoundingMode.HALF_UP);
+        return sum.divide(BigDecimal.valueOf(array.length), 2, RoundingMode.HALF_UP);
     }
 }

@@ -5,10 +5,10 @@ import java.util.Scanner;
 class Task17 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Podaj nazwe produktu:");
+        System.out.println("Insert product's name");
         String name = sc.nextLine();
 
-        System.out.println("Podaj cenę");
+        System.out.println("Insert price");
         BigDecimal price = sc.nextBigDecimal();
 
         System.out.println("Product: " + name.toUpperCase()

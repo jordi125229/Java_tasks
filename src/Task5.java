@@ -5,7 +5,7 @@ import java.util.Scanner;
 class Task5 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Podaj cene");
+        System.out.println("Insert price");
         String price = sc.nextLine();
 
         BigDecimal priceBd = new BigDecimal(price);

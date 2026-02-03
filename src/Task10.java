@@ -9,11 +9,11 @@ class Task10 {
         System.out.println(result2);
     }
 
-    static double add(double i1, double i2){
+    static double add(double i1, double i2) {
         return i1 + i2;
     }
 
-    static BigDecimal add(BigDecimal i1, BigDecimal i2){
+    static BigDecimal add(BigDecimal i1, BigDecimal i2) {
         return i1.add(i2);
     }
 }

@@ -5,7 +5,7 @@ import java.util.Scanner;
 class Task6 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Podaj liczby");
+        System.out.println("Insert numbers");
         String input1 = sc.nextLine();
         String input2 = sc.nextLine();
 
@@ -16,13 +16,13 @@ class Task6 {
         comparing(result);
     }
 
-    static void comparing(int result){
-        if (result > 0){
-            System.out.println("Większa jest pierwsza liczba");
+    static void comparing(int result) {
+        if (result > 0) {
+            System.out.println("The bigger number is the first one");
         } else if (result < 0) {
-            System.out.println("Druga liczba jest wieksza");
+            System.out.println("The second number is bigger");
         } else {
-            System.out.println("Liczby są równe");
+            System.out.println("The numbers are equal");
         }
     }
 }
