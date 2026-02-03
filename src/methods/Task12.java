@@ -6,9 +6,9 @@ class Task12 {
         boolean result = ifPrime(n);
 
         if (result) {
-            System.out.println("Liczba jest pierwsza");
+            System.out.println("The number is prime");
         } else {
-            System.out.println("Liczba nie jest pierwsza");
+            System.out.println("The number isn't prime");
         }
     }
 

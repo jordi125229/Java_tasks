@@ -12,6 +12,7 @@ class Task6 {
 
         String ageCategory = tester.agecategory(age);
         System.out.println(ageCategory);
+
     }
 
     String agecategory(double wiek) {

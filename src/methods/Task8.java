@@ -6,16 +6,16 @@ class Task8 {
         int b = 4;
         int c = 5;
 
-        int i1 = silniaIter(3);
-        int i2 = silniaIter(4);
-        int i3 = silniaIter(5);
+        int i1 = factorialIter(3);
+        int i2 = factorialIter(4);
+        int i3 = factorialIter(5);
 
         System.out.println(i1);
         System.out.println(i2);
         System.out.println(i3);
     }
 
-    public static int silniaIter(int n) {
+    public static int factorialIter(int n) {
         int factorial = 1;
         for (int i = 1; i <= n; i++) {
             factorial *= i;
