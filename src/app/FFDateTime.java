@@ -1,6 +1,6 @@
 package app;
 
-final class FFDateTime implements Comparable {
+public final class FFDateTime implements Comparable {
     private final int year;
     private final int month;
     private final int day;

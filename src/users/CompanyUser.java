@@ -1,6 +1,9 @@
 package users;
 
-public class CompanyUser extends User {
+import java.util.List;
+import java.util.Optional;
+
+public class CompanyUser extends User  {
     private String companyName;
     private String taxId;
 
@@ -29,4 +32,5 @@ public class CompanyUser extends User {
     public String toString() {
         return super.toString() + "; " + companyName + "; " + taxId;
     }
+
 }

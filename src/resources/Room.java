@@ -4,9 +4,11 @@ import money.Money;
 
 import java.math.BigDecimal;
 import java.util.HashSet;
+import java.util.List;
+import java.util.Optional;
 import java.util.Set;
 
-public class Room extends Resource {
+public class Room extends Resource implements ResourceRepository{
     private int seats;
     private Set<String> equipment;
 
@@ -41,5 +43,20 @@ public class Room extends Resource {
     public String describe() {
         return "Name: " + name + "; Custom hourly rate: " + customHourlyRate + "; Seat's number: "
                 + seats + "; available equipment: " + equipment;
+    }
+
+    @Override
+    public void add(Resource r) {
+        resources.add(r);
+    }
+
+    @Override
+    public Optional<Resource> findByName(String name) {
+        return Optional.empty();
+    }
+
+    @Override
+    public List<Resource> findAll() {
+        return List.of();
     }
 }

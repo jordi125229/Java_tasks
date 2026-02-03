@@ -2,9 +2,14 @@ package resources;
 
 import money.Money;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public abstract class Resource {
     String name;
     protected Money customHourlyRate;
+
+    List<Resource> resources = new ArrayList<>();
 
     public Resource(String name, Money customHourlyRate) {
         this.name = name;

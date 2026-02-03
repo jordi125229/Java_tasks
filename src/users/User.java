@@ -1,8 +1,12 @@
 package users;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class User {
     private String email;
     private String displayName;
+
 
     public User(String email, String displayName) {
         this.email = email;

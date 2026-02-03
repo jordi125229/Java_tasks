@@ -1,5 +1,8 @@
 package users;
 
+import java.util.List;
+import java.util.Optional;
+
 public class IndividualUser extends User {
     int studentId;
 
@@ -24,4 +27,5 @@ public class IndividualUser extends User {
     public String toString() {
         return super.toString() + "; " + studentId;
     }
+
 }

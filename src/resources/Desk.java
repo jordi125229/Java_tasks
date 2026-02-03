@@ -2,7 +2,10 @@ package resources;
 
 import money.Money;
 
-class Desk extends Resource{
+import java.util.List;
+import java.util.Optional;
+
+class Desk extends Resource implements ResourceRepository{
     private DeskType deskType;
 
     public DeskType getDeskType() {
@@ -26,6 +29,21 @@ class Desk extends Resource{
     @Override
     public String describe() {
         return "Name: " + name + "; Custom hourly rate: " + customHourlyRate + "; " + deskType;
+    }
+
+    @Override
+    public void add(Resource r) {
+        resources.add(r);
+    }
+
+    @Override
+    public Optional<Resource> findByName(String name) {
+        return Optional.empty();
+    }
+
+    @Override
+    public List<Resource> findAll() {
+        return List.of();
     }
 }
 
