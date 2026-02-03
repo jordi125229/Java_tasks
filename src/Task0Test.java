@@ -11,7 +11,5 @@ class Task0Test {
         test2.setName("test of private specyficator");
         test2.setNumber(2); //zeby ustawic pola
         System.out.println(test2.getName() + "; " + test2.getNumber()); //get zeby je pobrac
-
-
     }
 }

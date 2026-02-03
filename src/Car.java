@@ -42,14 +42,14 @@ class Car {
     }
 
     //4
-    public void showDifference(){
+    public void showDifference() {
         String brand = "Opel";
         System.out.println(brand);
         System.out.println(this.brand);
     }
 
     //5
-    public void changeBrand(String brand){
+    public void changeBrand(String brand) {
         this.brand = brand;
     }
 
@@ -59,17 +59,17 @@ class Car {
     }
 
     //7
-    public void introduceYourself(){
+    public void introduceYourself() {
         System.out.println("I am a car of brand " + brand + " from year " + yearofProduction);
     }
 
     //8
-    public static void classDescription(){
+    public static void classDescription() {
         System.out.println("This class represents cars");
     }
 
     //10
-    public static void printCarsArray(Car[] cars){
+    public static void printCarsArray(Car[] cars) {
         for (Car car : cars) {
             System.out.println(car);
         }
@@ -77,6 +77,6 @@ class Car {
 
     @Override
     public String toString() {
-        return  brand + "; " + yearofProduction;
+        return brand + "; " + yearofProduction;
     }
 }

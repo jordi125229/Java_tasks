@@ -1,5 +1,4 @@
 package task0;
 
-class TestProtected extends Task0Protected{
-
+class TestProtected extends Task0Protected {
 }

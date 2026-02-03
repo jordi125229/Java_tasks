@@ -67,5 +67,4 @@ class Person {
     public int compareAge(Person other){
         return this.age - other.age;
     }
-
 }

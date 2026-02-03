@@ -3,7 +3,7 @@ package task0;
 import task01.TaskProtected;
 
 class Test2 extends TaskProtected {
-    public void test(){
+    public void test() {
         System.out.println(name); //bez protected nie daloby rady tego
     }
 
