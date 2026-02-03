@@ -15,14 +15,14 @@ class Task6 {
 
     }
 
-    String agecategory(double wiek) {
-        if (wiek < 12 && wiek >= 0) {
+    String agecategory(double age) {
+        if (age < 12 && age >= 0) {
             return "Child";
-        } else if (wiek >= 12 && wiek < 18) {      // w poleceniu jest ze nastolatek (12-17) a pozniej dorosly od 18 w gore wiec pominiety jest okres 17-18, dlatego zalozylem ze ponizej 18 jest nastolatkiem
+        } else if (age >= 12 && age < 18) {      // w poleceniu jest ze nastolatek (12-17) a pozniej dorosly od 18 w gore wiec pominiety jest okres 17-18, dlatego zalozylem ze ponizej 18 jest nastolatkiem
             return "Teeneger";
-        } else if (wiek >= 18 && wiek < 65) { // tu podobnie jak wyzej
+        } else if (age >= 18 && age < 65) { // tu podobnie jak wyzej
             return "Adult";
-        } else if (wiek >= 65) {
+        } else if (age >= 65) {
             return "Senior";
         } else {
             return "Wrong age";
