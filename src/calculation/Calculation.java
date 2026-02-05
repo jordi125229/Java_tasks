@@ -25,6 +25,5 @@ enum Calculation {
             return a / b;
         }
     };
-
     abstract int calculate(int a, int b);
 }

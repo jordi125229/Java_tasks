@@ -9,7 +9,6 @@ public enum DayOfWeek {
     SATURDAY,
     SUNDAY;
 
-
     static boolean isWeekend(DayOfWeek weekDay) {
         if (weekDay == SATURDAY || weekDay == SUNDAY) {
             return true;
