@@ -1,7 +1,6 @@
 package task4;
 
 import task1.Pair;
-
 import static task4.MinMax.minMax;
 import static task4.MinMax.printPair;
 

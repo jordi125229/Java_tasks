@@ -12,6 +12,7 @@ public final class MinMax {
         }
         T max = arr[0];
         T min = arr[0];
+
         for (int i = 1; i < arr.length; i++) {
             if (arr[i] == null) {
                 throw new IllegalArgumentException("Array's element can't be null");
