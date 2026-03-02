@@ -1,18 +1,16 @@
 package task10;
 
+import java.util.Random;
 import java.util.function.Supplier;
 
 public class CodeGenerator {
-//    Supplier<String> codeSupplier = () ->;
+    Supplier<String> codeSupplier = () -> {
+        String chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+        Random random = new Random();
+        StringBuilder stringBuilder = new StringBuilder();
+        for (int i = 0; i < 10; i++) {
+            stringBuilder.append(chars.charAt(random.nextInt(chars.length())));
+        }
+        return String.valueOf(stringBuilder);
+    };
 }
-
-/*Zadanie 10 – Generator kodów (`Supplier`)
-
-1. Zdefiniuj `Supplier<String> codeSupplier`, który generuje 6-znakowy losowy kod z liter A–Z i cyfr 0–9.
-        2. W `main`:
-
-        * utwórz tablicę `String[] codes = new String[10];`
-        * wypełnij ją 10 wygenerowanymi kodami (pętla `for` + `supplier.get()`),
-        * wypisz wszystkie kody.
-
-> Bez `Stream.generate`, tylko `Supplier` + zwykła pętla.*/

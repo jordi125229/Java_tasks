@@ -12,6 +12,7 @@ public class PredicateTest {
         for (int i = 0; i < loginy.length; i++) {
             boolean test = predicateInterface.isValidLogin.test(loginy[i]);
             if (test == true) {
+                System.out.println(loginy[i]);
                 correctLogins++;
             }
         }

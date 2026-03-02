@@ -1,4 +1,4 @@
-package task1;
+package task123;
 
 public class Test {
     public static void main(String[] args) {
