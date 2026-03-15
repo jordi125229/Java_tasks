@@ -28,4 +28,13 @@ public class EntryObject<K1, K2, V> implements TwoKeyMap.Entry<K1, K2, V> {
     public V setValue(V value) {
         return value;
     }
+
+    @Override
+    public String toString() {
+        return "EntryObject{" +
+                "k1=" + k1 +
+                ", k2=" + k2 +
+                ", value=" + value +
+                '}';
+    }
 }

@@ -5,7 +5,7 @@ public class Pair<K1, K2> {
     private K2 second;
 
     public Pair(K1 first, K2 second) {
-        if (first == null || second == null){
+        if (first == null || second == null) {
             throw new NullPointerException("Keys can't be null");
         }
         this.first = first;
