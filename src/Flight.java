@@ -3,11 +3,11 @@ import java.time.*;
 import java.time.zone.ZoneRulesException;
 
 public class Flight {
-    String flightNumber;
-    String departureAirport;
-    String arrivalAirport;
-    ZonedDateTime departureTime;
-    ZonedDateTime arrivalTime;
+    private String flightNumber;
+    private String departureAirport;
+    private String arrivalAirport;
+    private ZonedDateTime departureTime;
+    private ZonedDateTime arrivalTime;
 
     public Flight(String flightNumber, String departureAirport, String arrivalAirport, ZonedDateTime departureTime, ZonedDateTime arrivalTime) {
         if (arrivalTime.isBefore(departureTime)) {
@@ -39,7 +39,7 @@ public class Flight {
     private static ZonedDateTime zoneTimeCreation(LocalDateTime departureTime, String zoneId) {
         try {
             return ZonedDateTime.of(departureTime, ZoneId.of(zoneId));
-        } catch (ZoneRulesException e){
+        } catch (ZoneRulesException e) {
             throw new DateTimeException("Wrong data zone");
         }
     }
