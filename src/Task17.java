@@ -11,7 +11,6 @@ class Task17 {
         System.out.println("Insert price");
         BigDecimal price = sc.nextBigDecimal();
 
-        System.out.println("Product: " + name.toUpperCase()
-                + ", price: " + price.setScale(2, RoundingMode.HALF_UP) + " PLN");
+        System.out.println("Product: " + name.toUpperCase() + ", price: " + price.setScale(2, RoundingMode.HALF_UP) + " PLN");
     }
 }

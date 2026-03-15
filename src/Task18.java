@@ -11,18 +11,18 @@ class Task18 {
 
         System.out.println("Insert prices: ");
 
-        inser(bigDecimals, sc);
+        insert(bigDecimals, sc);
         print(bigDecimals);
     }
 
-    private static void inser(BigDecimal[] bigDecimals, Scanner sc) {
+    private static void insert(BigDecimal[] bigDecimals, Scanner sc) {
         for (int i = 0; i < bigDecimals.length; i++) {
             bigDecimals[i] = sc.nextBigDecimal();
         }
     }
 
-    private static void print(BigDecimal[] bigDecimals) {
-        for (BigDecimal bigDecimal : bigDecimals) {
+    private static void print(BigDecimal[] numbers) {
+        for (BigDecimal bigDecimal : numbers) {
             System.out.println(bigDecimal.setScale(2, RoundingMode.HALF_UP) + " PLN");
         }
     }

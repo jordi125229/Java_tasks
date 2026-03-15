@@ -11,8 +11,8 @@ class Task15 {
     }
 
     static void print(String[] array) {
-        for (String s : array) {
-            System.out.println(s);
+        for (String word : array) {
+            System.out.println(word);
         }
     }
 }
