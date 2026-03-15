@@ -44,7 +44,7 @@ public class Main {
             String line;
             int lineNumber = 1;
             while ((line = bufferedReader.readLine()) != null) {
-                if (!line.trim().isEmpty() && !line.trim().startsWith("#") && !line.trim().startsWith("//") && !line.trim().startsWith("--")) {
+                if (ifLineCanBeReaded(line)) {
                     String[] csv = line.split(",");
                     if (csv[3].equalsIgnoreCase("active")) {
                         System.out.println(lineNumber + ": " + csv[1] + " , " + csv[2]);
@@ -57,6 +57,10 @@ public class Main {
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+    private static boolean ifLineCanBeReaded(String line) {
+        return !line.trim().isEmpty() && !line.trim().startsWith("#") && !line.trim().startsWith("//") && !line.trim().startsWith("--");
     }
 
     private static void systemErrorsSaving() {
