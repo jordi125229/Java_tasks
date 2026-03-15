@@ -10,11 +10,11 @@ public class FunctionTask {
         return s;
     };
 
-    Function<String[], String[]> replacingSigns = s -> {
-        for (int i = 0; i < s.length; i++) {
-            s[i] = s[i].replaceAll("\\s+", "");
+    Function<String[], String[]> replacingSigns = string -> {
+        for (int i = 0; i < string.length; i++) {
+            string[i] = string[i].replaceAll("\\s+", "");
         }
-        return s;
+        return string;
     };
 
     Function<String[], String[]> combinedFunctions = normalizeLogin.andThen(replacingSigns);

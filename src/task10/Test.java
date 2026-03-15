@@ -15,8 +15,8 @@ public class Test {
     }
 
     static<T> void print(T[] arr){
-        for (T t : arr) {
-            System.out.println(t);
+        for (T element : arr) {
+            System.out.println(element);
         }
     }
 }

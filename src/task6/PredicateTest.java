@@ -3,8 +3,8 @@ package task6;
 public class PredicateTest {
     public static void main(String[] args) {
         PredicateInterface predicateInterface = new PredicateInterface();
-        String[] loginy = {"adam", "Ala123", "x", "User_01", "ADMIN", "gość"};
-        checkingLogginsCorrection(loginy, predicateInterface);
+        String[] logins = {"adam", "Ala123", "x", "User_01", "ADMIN", "gość"};
+        checkingLogginsCorrection(logins, predicateInterface);
     }
 
     private static void checkingLogginsCorrection(String[] loginy, PredicateInterface predicateInterface) {

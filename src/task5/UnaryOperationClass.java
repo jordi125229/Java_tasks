@@ -10,11 +10,11 @@ public class UnaryOperationClass {
         return list;
     };
 
-    BinaryOperator<Integer> maxOp = (a, b) -> {
-        if (a > b) {
-            return a;
+    BinaryOperator<Integer> maxOp = (firstNumber, secondNumber) -> {
+        if (firstNumber > secondNumber) {
+            return firstNumber;
         } else {
-            return b;
+            return secondNumber;
         }
     };
 }
