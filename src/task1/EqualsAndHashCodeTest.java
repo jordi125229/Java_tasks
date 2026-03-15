@@ -1,13 +1,13 @@
 package task1;
 
 public class EqualsAndHashCodeTest {
-    public static <T, U> void main(String[] args) {
+    public static void main(String[] args) {
         Pair<Integer, String> p1 = Pair.of(1, "a");
         Pair<Integer, String> p2 = Pair.of(1, "a");
         Pair<Integer, String> p3 = Pair.of(1, "b");
 
-        testinOfPairMatching(p1, p2);
-        testinOfPairMatching(p1, p3);
+        testingOfPairMatching(p1, p2);
+        testingOfPairMatching(p1, p3);
 
         int p1HashCode = p1.hashCode();
         int p2HashCode = p2.hashCode();
@@ -22,7 +22,7 @@ public class EqualsAndHashCodeTest {
         }
     }
 
-    private static void testinOfPairMatching(Pair<Integer, String> p1, Pair<Integer, String> p2) {
+    private static void testingOfPairMatching(Pair<Integer, String> p1, Pair<Integer, String> p2) {
         boolean equals = p1.equals(p2);
         System.out.println(equals);
     }

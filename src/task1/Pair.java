@@ -2,24 +2,24 @@ package task1;
 
 import java.util.Objects;
 
-public final class Pair<T, U> {
-    private final T first;
-    private final U second;
+public final class Pair<FIRST, SECOND> {
+    private final FIRST first;
+    private final SECOND second;
 
-    private Pair(T first, U second) {
+    private Pair(FIRST first, SECOND second) {
         this.first = first;
         this.second = second;
     }
 
-    public static <T, U> Pair<T, U> of(T first, U second) {
+    public static <FIRST, SECOND> Pair<FIRST, SECOND> of(FIRST first, SECOND second) {
         return new Pair<>(first, second);
     }
 
-    public T getFirst() {
+    public FIRST getFirst() {
         return first;
     }
 
-    public U getSecond() {
+    public SECOND getSecond() {
         return second;
     }
 

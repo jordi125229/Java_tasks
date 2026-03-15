@@ -2,30 +2,30 @@ package task6;
 
 import java.util.Objects;
 
-public final class Triple<T, U, V> {
-    private final T first;
-    private final U second;
-    private final V third;
+public final class Triple<FIRST, SECOND, THIRD> {
+    private final FIRST first;
+    private final SECOND second;
+    private final THIRD third;
 
-    public T first() {
+    public FIRST first() {
         return first;
     }
 
-    public U second() {
+    public SECOND second() {
         return second;
     }
 
-    public V third() {
+    public THIRD third() {
         return third;
     }
 
-    public Triple(T first, U second, V third) {
+    public Triple(FIRST first, SECOND second, THIRD third) {
         this.first = first;
         this.second = second;
         this.third = third;
     }
 
-    public static <T, U, V> Triple<T, U, V> of(T first, U second, V third) {
+    public static <FIRST, SECOND, THIRD> Triple<FIRST, SECOND, THIRD> of(FIRST first, SECOND second, THIRD third) {
         return new Triple<>(first, second, third);
     }
 

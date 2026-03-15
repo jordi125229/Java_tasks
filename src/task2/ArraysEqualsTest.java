@@ -4,14 +4,14 @@ import static task2.ArrayUtils.arraysEqual;
 
 class ArraysEqualsTest {
     public static void main(String[] args) {
-        Integer[] a = new Integer[]{1, null, 3};
-        Integer[] b = new Integer[]{1, null, 3};
-        Integer[] c = new Integer[]{1, 2, 3};
+        Integer[] intArray1 = new Integer[]{1, null, 3};
+        Integer[] intArray2 = new Integer[]{1, null, 3};
+        Integer[] intArray3 = new Integer[]{1, 2, 3};
 
-        boolean firstCheck = arraysEqual(a, b);
+        boolean firstCheck = arraysEqual(intArray1, intArray2);
         System.out.println(firstCheck);
 
-        boolean secondCheck = arraysEqual(a, c);
+        boolean secondCheck = arraysEqual(intArray1, intArray3);
         System.out.println(secondCheck);
 
         String[] firstArray = new String[]{"x"};
