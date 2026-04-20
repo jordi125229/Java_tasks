@@ -6,6 +6,6 @@ public class Vehicle {
     }
 
     void oldMethod() {
-        System.out.println("Whatever");
+        System.out.println("Old method");
     }
 }

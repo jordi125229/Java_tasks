@@ -12,23 +12,38 @@ public class PasswordValidator {
                     Object object = declaredField.get(obj);
                     String password = (String) object;
                     PasswordValidation annotation = declaredField.getAnnotation(PasswordValidation.class);
-                    if (password.length() < annotation.minLength()) {
-                        return false;
-                    }
-                    if (annotation.requireDigit() && !password.matches(".*\\d.*")) {
-                        return false;
-                    }
-                    if (annotation.requireSpecialChar()
-                            && !password.matches(".*[^a-zA-Z0-9].*")) {
-                        return false;
-                    }
+                    if (passwordLenghtValidation(password, annotation)) return false;
+                    if (passwordRequiredDigitsValidation(annotation, password)) return false;
+                    if (passwordRequiredDigiValidation(annotation, password)) return false;
                     return true;
                 }
             }
             return true;
-        } catch (
-                IllegalAccessException e) {
-            throw new RuntimeException(e);
+        } catch (IllegalAccessException e) {
+            System.out.println("Illegal access to field");
+            return false;
         }
+    }
+
+    private static boolean passwordRequiredDigiValidation(PasswordValidation annotation, String password) {
+        if (annotation.requireSpecialChar()
+                && !password.matches(".*[^a-zA-Z0-9].*")) {
+            return true;
+        }
+        return false;
+    }
+
+    private static boolean passwordRequiredDigitsValidation(PasswordValidation annotation, String password) {
+        if (annotation.requireDigit() && !password.matches(".*\\d.*")) {
+            return true;
+        }
+        return false;
+    }
+
+    private static boolean passwordLenghtValidation(String password, PasswordValidation annotation) {
+        if (password.length() < annotation.minLength()) {
+            return true;
+        }
+        return false;
     }
 }
