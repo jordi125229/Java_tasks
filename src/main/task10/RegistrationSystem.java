@@ -55,7 +55,7 @@ public class RegistrationSystem {
         return courses.stream()
                 .sorted(Comparator.comparingInt((Course c) -> c.getEnrolledStudents().size()) //kolejna kwestia do przegadania to fakt ze nie rozpoznaje obiektu
                         .reversed())
-                .map(c -> c.getName() + " (" + c.getEnrolledStudents().size() + " studentów)")
+                .map((Course c) -> c.getName() + " (" + c.getEnrolledStudents().size() + " studentów)")
                 .collect(Collectors.toList());
     }
 

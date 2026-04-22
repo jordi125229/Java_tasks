@@ -446,12 +446,13 @@ public class TemperatureSensor {
 
 ### Pytania
 
-1. Ile razy program się zatrzymywał z warunkiem `reading.getTemperature() > 38`? Czy to lepsze niż 200 zatrzymań? 76
+1. Ile razy program się zatrzymywał z warunkiem `reading.getTemperature() > 38`? Czy to lepsze niż 200 zatrzymań? 80
    razy
 2. Dlaczego żaden odczyt nie dostaje statusu "CRITICAL"? Jaki jest próg w kodzie? zadna temperatura nie jest wieksza niz
    100 a na taki jest ustawiony limit CRITICAL
 3. Na co trzeba zmienić próg, żeby czujnik klasyfikował temperatury > 40°C jako CRITICAL? trzeba ustawic prog na 40
-4. Wymień 3 zalety Log Breakpoints nad `System.out.println`.
+4. Wymień 3 zalety Log Breakpoints nad `System.out.println`. Nie trzeba pamietac o czyszczeniu kodu po napisaniu metody
+   `System.out.println`, w debugerze mozemy zatrzymac program, widzimy dokladnie jego dzialanie, metoda po metodzie
 
 ---
 
@@ -1525,33 +1526,43 @@ Dla **każdego** z 3 bugów opisz:
 Odpowiedzi:
 
 1. Do pierwszego buga użyłem Exception Breakpoint, do drugiego Evaluate Expression, a do trzeciego Stream Debugger
-2. W zadaniu pierwszym zaobserowalem ze kurs **Python** jest równy null, w zadaniu drugim warunek 
-   ```course.getEnrolledStudents().size() > course.getMaxCapacity()'``` jest zawsze false, co przy kursie "Java podstawy" daje
+2. W zadaniu pierwszym zaobserowalem ze kurs **Python** jest równy null, w zadaniu drugim warunek
+   ```course.getEnrolledStudents().size() > course.getMaxCapacity()'``` jest zawsze false, co przy kursie "Java
+   podstawy" daje
    opcje zapisania sie wiekszej ilosci osob niz jest to mozliwe, w zadaniu 3..
 3. W zadaniu pierwszym bug polega na braku oblsugi wyjatku lub walidacji kiedy course jest null:
+
 ```java
    System.out.println("\n=== Studenci na Python (nie istnieje) ===");
-   try {
-   List<String> pythonStudents = system.getStudentsByCourse("Python");
+   try{
+List<String> pythonStudents = system.getStudentsByCourse("Python");
    System.out.println(pythonStudents);
-   } catch (NullPointerException e) {
-   e.getMessage();
+   }catch(
+NullPointerException e){
+       e.getMessage();
    }
 
-   public List<String> getStudentsByCourse(String courseName) {
-   Course course = findCourse(courseName);
-   if (course == null){
-   return null;
-   } else {
-   return course.getEnrolledStudents().stream()
-   .map(Student::getName)
-   .collect(Collectors.toList());
-   }
-   // BUG #1: brak sprawdzenia null! NPE gdy kurs nie istnieje
-   }
+public List<String> getStudentsByCourse(String courseName) {
+    Course course = findCourse(courseName);
+    if (course == null) {
+        return null;
+    } else {
+        return course.getEnrolledStudents().stream()
+                .map(Student::getName)
+                .collect(Collectors.toList());
+    }
+    // BUG #1: brak sprawdzenia null! NPE gdy kurs nie istnieje
+}
 ```
+
 W zadaniu drugim, nalezy zmienic warunek w metodzie **register** w walidacji:
+
 ```java
-course.getEnrolledStudents().size() >= course.getMaxCapacity();
+course.getEnrolledStudents().
+
+size() >=course.
+
+getMaxCapacity();
 ```
+
 a w zadaniu trzecim nalezy zmienic sortowanie dodajac ```.reversed```, tak by kolejnosc byla poprawna
